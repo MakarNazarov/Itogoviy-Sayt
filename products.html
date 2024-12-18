@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Продукты</title>
+</head>
+<body>
+    <header>
+        <h1>Интернет-магазин Кофе</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="products.html">Продукты</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Наши Продукты</h2>
+            <div class="product" onclick="openModal('coffeeArabica')">
+                <img src="img/coffee2.jpg" alt="Кофе Арабика" />
+                <h3>Кофе Арабика</h3>
+                <p>Цена: 200 руб.</p>
+            </div>
+            <div class="product" onclick="openModal('coffeeRobusta')">
+                <img src="img/coffee3.jpg" alt="Кофе Робуста" />
+                <h3>Кофе Робуста</h3>
+                <p>Цена: 150 руб.</p>
+            </div>
+
+            <div class="product" onclick="openModal('Rastvorimich')">
+                <img src="img/coffee4.jpg" alt="Растворимый" />
+                <h3>Растворимый кофе</h3>
+                <p>Цена: 0,01 руб. Пить не советуем!</p>
+            </div>
+
+            <div class="product" onclick="openModal('Crutoy')">
+                <img src="img/coffee5.jpg" alt="Элитный" />
+                <h3>Элитный кофе</h3>
+                <p>Цена: 1150 руб.</p>
+            </div>
+
+            <div class="product" onclick="openModal('OneLove')">
+                <img src="img/coffee6.jpg" alt="Кофе Богов" />
+                <h3>Напиток богов</h3>
+                <p>Цена: 50 руб.</p>
+            </div>
+           
+        </section>
+    </main>
+    <div id="coffeeArabica" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('coffeeArabica')">&times;</span>
+            <h2>Кофе Арабика</h2>
+            <p>Арабика — это один из самых популярных видов кофе в мире. Обладает мягким, сладким вкусом и высоким содержанием кислот.</p>
+        </div>
+    </div>
+    <div id="coffeeRobusta" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('coffeeRobusta')">&times;</span>
+            <h2>Кофе Робуста</h2>
+            <p>Робуста — это крепкий и горький кофе с высоким содержанием кофеина. Он идеально подходит для эспрессо и приготовления крепких напитков.</p>
+        </div>
+    </div>
+
+    <div id="Rastvorimich" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Rastvorimich')">&times;</span>
+            <h2>Кофе Растворимый</h2>
+            <p>Ребят, лучше это не пить, серьезно говорю, листайте дальше.</p>
+        </div>
+    </div>
+
+    <div id="Crutoy" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('Crutoy')">&times;</span>
+            <h2>Кофе Элитный</h2>
+            <p>Купите, не пожалеете. Очень сбалансированный кофе, но только чуть-чуь дорогой.</p>
+        </div>
+    </div>
+
+    <div id="OneLove" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('OneLove')">&times;</span>
+            <h2>Кофе  Богов</h2>
+            <p>Бюджетно, вкусно, РЕКОМЕНДУЮ!!!.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Интернет-магазин Кофе</p>
+    </footer>
+    <script src="scrypt.js"></script>
+</body>
+</html>
